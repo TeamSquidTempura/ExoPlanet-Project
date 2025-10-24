@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Planet T - Exoplanet Discovery</title>
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+</head>
+<body>
+<div class="stars" id="starsContainer"></div>
+
+<div class="container">
+    <header>
+        <h1>PLANET T</h1>
+        <p class="subtitle">A New World in the Cosmos</p>
+    </header>
+
+    <div class="hero-section">
+        <div class="planet-visual">
+            <div class="planet"></div>
+        </div>
+        <p class="description editable" data-field="description">
+            Planet T orbits in the habitable zone of its host star, presenting a unique opportunity for potential colonization. With conditions suitable for liquid water and a stable atmosphere, this exoplanet represents one of humanity's most promising prospects for interstellar exploration.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Planetary Characteristics</h2>
+        <div class="data-grid">
+            <div class="data-card">
+                <h3>Distance from Earth</h3>
+                <div class="data-value editable" data-field="distance">5.3e+18</div>
+                <div class="data-unit">m</div>
+            </div>
+            <div class="data-card">
+                <h3>Orbital Radius</h3>
+                <div class="data-value editable" data-field="orbital_radius">3.7e+10</div>
+                <div class="data-unit">m</div>
+            </div>
+            <div class="data-card">
+                <h3>Planet Mass</h3>
+                <div class="data-value editable" data-field="mass">2.32e+25</div>
+                <div class="data-unit">kg</div>
+            </div>
+            <div class="data-card">
+                <h3>Planet Radius</h3>
+                <div class="data-value editable" data-field="radius">1.1e+7</div>
+                <div class="data-unit">m</div>
+            </div>
+            <div class="data-card">
+                <h3>Orbital Period</h3>
+                <div class="data-value editable" data-field="orbital_period">63</div>
+                <div class="data-unit">days</div>
+            </div>
+            <div class="data-card">
+                <h3>Surface Gravity</h3>
+                <div class="data-value editable" data-field="gravity">12.8</div>
+                <div class="data-unit">N/m^2</div>
+            </div>
+            <div class="data-card">
+                <h3>Surface Temperature</h3>
+                <div class="data-value editable" data-field="temperature">235</div>
+                <div class="data-unit">K avg</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Comparison with Earth</h2>
+        <div class="data-grid">
+            <div class="data-card">
+                <h3>Orbital Radius</h3>
+                <div class="data-value editable" data-field="orbital_radius">0.25</div>
+                <div class="data-unit">Earth</div>
+            </div>
+            <div class="data-card">
+                <h3>Planet Mass</h3>
+                <div class="data-value editable" data-field="mass">3.89</div>
+                <div class="data-unit">Earth</div>
+            </div>
+            <div class="data-card">
+                <h3>Planet Radius</h3>
+                <div class="data-value editable" data-field="radius">1.73</div>
+                <div class="data-unit">Earth</div>
+            </div>
+            <div class="data-card">
+                <h3>Orbital Period</h3>
+                <div class="data-value editable" data-field="orbital_period">0.17</div>
+                <div class="data-unit">Earth</div>
+            </div>
+            <div class="data-card">
+                <h3>Surface Gravity</h3>
+                <div class="data-value editable" data-field="gravity">1.31</div>
+                <div class="data-unit">Earth</div>
+            </div>
+            <div class="data-card">
+                <h3>Surface Temperature</h3>
+                <div class="data-value editable" data-field="temperature">0.81</div>
+                <div class="data-unit">Earth</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Host Star Properties</h2>
+        <div class="star-info">
+            <div class="star-visual"></div>
+            <div class="star-details">
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h3>Star Classification</h3>
+                        <div class="data-value editable" data-field="star_class">M2</div>
+                        <div class="data-unit">Stellar class</div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Star Mass</h3>
+                        <div class="data-value editable" data-field="star_mass">0.50</div>
+                        <div class="data-unit">Solar masses</div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Star Luminosity</h3>
+                        <div class="data-value editable" data-field="star_luminosity">0.054</div>
+                        <div class="data-unit">Solar luminosity</div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Star Temperature</h3>
+                        <div class="data-value editable" data-field="star_temperature">3600</div>
+                        <div class="data-unit">K</div>
+                    </div>
+                    <div class="data-card">
+                        <h3>Absolute Magnitude</h3>
+                        <div class="data-value editable" data-field="star_temperature">7.9</div>
+                        <div class="data-unit">M</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Habitability Zone</h2>
+        <p class="editable" data-field="habitability_intro">
+            This is a result from the simulation of the Habitability based on Goldilocks Zone.
+            Where water can be found in liquid state.
+            This indication helps us to determine if the planet has extremely hot/cold or comfortable environment to sustain life.
+        </p>
+        <p class="editable" data-field="habitability_intro">
+            Goldilocks zone is something that is just like showers in grandma's house since if the knob is twisted too little, the water coming out is freezing and whenever the knob is twisted too much, the water is boiling.
+            Therefore, the zone where shower's temperature is comfortable is tiny.
+        </p>
+        <p class="editable" data-field="habitability_intro">
+            The table and diagram below shows the radius of the Goldilocks zone for its host star.
+        </p>
+        <div class="habitability-info">
+            <div class="data-grid">
+                <div class="data-card">
+                    <h3>Inner Radius</h3>
+                    <div class="data-value editable" data-field="inner_radius">0.18</div>
+                    <div class="data-unit">AU</div>
+                </div>
+                <div class="data-card">
+                    <h3>Outer Radius</h3>
+                    <div class="data-value editable" data-field="outer_radius">0.26</div>
+                    <div class="data-unit">AU</div>
+                </div>
+            </div>
+        </div>
+        <a href="https://spacecalcs.com/calcs/habitable-zone/?authuser=0">
+            <img src="resources/HZ.png" alt="Habitability Zone">
+        </a>
+        <p><h3 style="text-align: center">Orbital Distance: 0.25AU</h3>
+        <div class="habitability-zone">
+            <h3>Favorable Conditions</h3>
+            <ul>
+                <li class="editable" data-field="condition_1">Liquid water: The temperature on the planet is just "alright" to sustain liquid state water</li>
+                <li class="editable" data-field="condition_2">Distance: "just right" distance between the planet and the sun creates favorable condition to sustain life</li>
+                <li class="editable" data-field="condition_3">Temperature: Not too hot or not too cold</li>
+            </ul>
+        </div>
+        <p class="editable" data-field="habitability_conclusion" style="margin-top: 20px;">
+            The combination of these factors suggests that Planet T could potentially support Earth-ish life forms.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Atmospheric Composition (Fiction)</h2>
+        <div class="data-grid">
+            <div class="data-card">
+                <h3>Nitrogen</h3>
+                <div class="data-value editable" data-field="nitrogen">76</div>
+                <div class="data-unit">%</div>
+            </div>
+            <div class="data-card">
+                <h3>Oxygen</h3>
+                <div class="data-value editable" data-field="oxygen">21</div>
+                <div class="data-unit">%</div>
+            </div>
+            <div class="data-card">
+                <h3>Argon</h3>
+                <div class="data-value editable" data-field="argon">2</div>
+                <div class="data-unit">%</div>
+            </div>
+            <div class="data-card">
+                <h3>Other Gases</h3>
+                <div class="data-value editable" data-field="other_gases">1</div>
+                <div class="data-unit">%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Potential for Life - Xenobiology</h2>
+        <p class="editable" data-field="xenobiology_intro">
+            Considering the factor of Goldilocks zone and its planet's atmosphere, The presence of oxygen and trace amounts of methane suggest possible biological activity.
+        </p>
+        <p class="editable" data-field="xenobiology_details">
+            If life exists on Planet T, it likely evolved to have thick layer of fur preventing from losing body temperature caused by planet's low average temperature.
+            Potential lifeforms could range from simple microbial organisms to complex multicellular life, adapted to the slightly higher gravity and similar atmospheric composition to Earth.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Seasonal Variations</h2>
+        <p class="editable" data-field="seasons">
+            With a planet tilt of 23 degrees, Planet T experiences seasonal variations similar to Earth. The shorter orbital period causes seasons to last approximately 16 Earth days each. This predictable seasonal cycle could support diverse and stable ecosystems within various biomes ranging from polar ice caps to tropical regions. However, since orbital period is not as long as Earth, there could be some potential problems that might affect some plants or animals that has been brought from the Earth. It would require some sort of adaptation into that climate condition.
+        </p>
+        <img src="resources/season.png">
+    </div>
+    <div class="section">
+        <h2>Works Cited</h2>
+        <div class="citations">
+            <a href="https://science.nasa.gov/exoplanets/habitable-zone/"><p class="editable" data-field="citation_1">“The Habitable Zone - NASA Science.” <em>NASA</em>, NASA, 4 Sept. 2025, science.nasa.gov/exoplanets/habitable-zone/. </p></a>
+            <a href="https://spacecalcs.com/calcs/habitable-zone/?authuser=0"><p class="editable" data-field="citation_2">“Habitable Zone.” <em>Space Calcs</em>, spacecalcs.com/calcs/habitable-zone/?authuser=0. Accessed 20 Oct. 2025. </p></a>
+            <a href="https://www.pngfind.com/mpng/iwmwmxw_four-seasons-free-download-png-changing-seasons-clip/"><p class="editable" data-field="citation_3">“Four Seasons Free Download PNG - Changing Seasons Clip Art, Transparent PNG(960X480) - Pngfind.” <em>PngFind.Com</em>, www.pngfind.com/mpng/iwmwmxw_four-seasons-free-download-png-changing-seasons-clip/. Accessed 20 Oct. 2025. </p></a>
+            <a href="https://en.wikipedia.org/wiki/Habitable_zone"><p class="editable" data-field="citation_4">“Habitable Zone.” <em>Wikipedia</em>, Wikimedia Foundation, 28 Sept. 2025, en.wikipedia.org/wiki/Habitable_zone.</p></a>
+            <a href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/earth/"><p class="editable" data-field="citation_5">“Earth.” <em>NASA</em>, NASA, 7 July 2025, www1.grc.nasa.gov/beginners-guide-to-aeronautics/earth/. </p></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Exoplanet Project EOL#7</p>
+    </footer>
+</div>
+</body>
+</html>
