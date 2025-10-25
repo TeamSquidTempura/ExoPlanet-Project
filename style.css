@@ -231,7 +231,7 @@ h1 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: radial-gradient(circle at center, #fff9e6, #ffcc00, #ff8800);
+    background: radial-gradient(circle at center, #fff9e6, #ff5500, #ff0000);
     box-shadow: 0 0 80px rgba(255, 204, 0, 0.8);
     flex-shrink: 0;
 }
