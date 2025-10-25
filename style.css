@@ -257,6 +257,15 @@ footer {
     font-size: 0.9em;
 }
 
+a {
+    text-decoration: none;
+    color: #808080FF;
+}
+
+.cite {
+    text-align: right;
+}
+
 .citations {
     background: rgba(0, 0, 0, 0.3);
     padding: 20px;
